@@ -45,18 +45,38 @@ nav a:hover {
 /* ================= HEADER ================= */
 header {
     text-align: center;
-    padding: 90px 20px;
+    padding: 100px 20px;
     background: linear-gradient(135deg, #ff6fa9, #ffb3d9);
     color: white;
-    border-radius: 0 0 60px 60px;
+    border-radius: 0 0 70px 70px;
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 header p {
     opacity: 0.9;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* badges */
+.header-badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.header-badges span {
+    background: rgba(255,255,255,0.25);
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    backdrop-filter: blur(10px);
 }
 
 /* ================= SECTION ================= */
@@ -156,8 +176,14 @@ footer {
 <body>
 
 <header>
-    <h1> fatinblqis e-Portfolio</h1>
+    <h1>✨ fatinblqis e-Portfolio</h1>
     <p>Mobile App Development · UKM · 2026</p>
+
+    <div class="header-badges">
+        <span>📱 Android Developer</span>
+        <span>🎓 UKM Student</span>
+        <span>💡 Jetpack Compose</span>
+    </div>
 </header>
 
 <nav>
