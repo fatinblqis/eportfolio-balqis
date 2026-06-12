@@ -109,16 +109,15 @@ h2 {
 
 /* ================= SCREENSHOTS ================= */
 .screenshots {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    display: flex;
     gap: 15px;
-    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .screenshots img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+    width: 48%;
+    height: auto;
     border-radius: 12px;
     transition: transform 0.3s ease;
 }
