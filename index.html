@@ -183,23 +183,6 @@ h2 {
     border-radius: 10px;
 }
 
-.video-container {
-    margin: 15px 0;
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .screenshots img {
     width: 48%;
     margin: 5px;
@@ -347,17 +330,26 @@ footer {
 }
 
 .video-container {
-    width: 350px;
-    margin: 15px auto;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    /* penting: buang “grab box feel” */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    background: black;
 }
 
 .video-container iframe {
     width: 100%;
-    height: 200px;
-    border: none;
+    height: 100%;
+    border: 0;
+    outline: none;
+    display: block;
+
+    /* hilangkan weird interaction highlight */
+    pointer-events: auto;
 }
 
 .github-btn {
@@ -392,6 +384,11 @@ footer {
     background: #e63e3e;
     transform: scale(1.05);
 }
+
+iframe:focus {
+    outline: none;
+}
+    
 </style>
 </head>
 
