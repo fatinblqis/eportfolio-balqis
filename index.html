@@ -393,9 +393,13 @@ iframe:focus {
 }
 
 .hero-header {
-    background: linear-gradient(135deg, #ffe6f0, #f8f9ff);
-    padding: 40px 20px;
     text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #ff4f9a, #ff9ac6, #ffd1e6);
+    color: white;
+    border-radius: 0 0 80px 80px;
+    position: relative;
+    overflow: hidden;
 }
 
 .header-content h1 {
@@ -409,27 +413,37 @@ iframe:focus {
     color: #666;
 }
 
+.header-content {
+    max-width: 900px;
+    margin: auto;
+}
+
 .header-badges {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 15px;
 }
 
 .header-badges span {
-    padding: 8px 14px;
+    background: rgba(255,255,255,0.25);
+    padding: 8px 12px;
     border-radius: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-    font-size: 0.9rem;
+    font-size: 13px;
+    backdrop-filter: blur(10px);
+    color: white;
 }
 
 /* SDG special badge */
-.sdg-badge {
-    background: #ff4d6d;
-    color: white;
-    font-weight: bold;
-    border: none;
+.sdg-description {
+    margin-top: 15px;
+    font-size: 14px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+    line-height: 1.5;
 }
     
 </style>
@@ -602,7 +616,7 @@ Through this lab, I learned how to implement local data storage in Android using
 
     <!-- 🎥 VIDEO ATAS -->
     <div class="video-container">
-        <iframe src="https://youtu.be/OpyDLPJlZRU" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/OpyDLPJlZRU" allowfullscreen></iframe>
     </div>
 
     <h3>Project 1 — Navigation App</h3>
