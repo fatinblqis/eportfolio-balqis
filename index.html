@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>fatinblqis ePortfolio</title>
+<title>fatinblqis</title
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -105,9 +105,9 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+.resources-grid .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(255,182,193,0.3);
 }
 
 /* ================= BUTTON ================= */
@@ -170,19 +170,77 @@ footer {
         height: 160px;
     }
 }
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: #fff;
+    border: 1px solid #ffd1e6;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #ff4f9a;
+    box-shadow: 0 3px 10px rgba(255, 79, 154, 0.1);
+    transition: 0.2s;
+}
+
+.skill:hover {
+    transform: translateY(-2px);
+    background: #ff4f9a;
+    color: white;
+}
+
+.section-sub {
+    text-align: center;
+    color: #777;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.resource-card {
+    text-decoration: none;
+    color: #2e2e2e;
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    border-left: 5px solid #ff4f9a;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 600;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255,182,193,0.3);
+    color: #ff4f9a;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>✨ fatinblqis e-Portfolio</h1>
+    <h1> fatinblqis Portfolio</h1>
     <p>Mobile App Development · UKM · 2026</p>
 
     <div class="header-badges">
-        <span>📱 Android Developer</span>
-        <span>🎓 UKM Student</span>
-        <span>💡 Jetpack Compose</span>
+        <span>Android Developer</span>
+        <span>UKM Student</span>
+        <span>Jetpack Compose</span>
     </div>
 </header>
 
@@ -296,7 +354,7 @@ Through this project, I gained hands-on experience in backend integration, offli
 
 <!-- REFLECTION -->
 <section id="reflection">
-<h2>🌱 Reflection & Learning Journey</h2>
+<h2> Reflection & Learning Journey</h2>
 
 <div class="card">
 <p>
@@ -340,10 +398,22 @@ Overall, this journey has significantly improved my confidence in Android develo
 <section id="skills">
 <h2>05 — Skills & Tech Stack</h2>
 
-<div class="card">
-<p>
-Kotlin · Jetpack Compose · Material 3 · Room DB · Firebase · Retrofit · MVVM · Navigation Compose · Coroutines
+<p class="section-sub">
+My technical skills and learning resources used throughout development.
 </p>
+
+<div class="card">
+<div class="skills-container">
+
+    <span class="skill">Kotlin</span>
+    <span class="skill">Jetpack Compose</span>
+    <span class="skill">Room Database</span>
+    <span class="skill">Navigation Compose</span>
+    <span class="skill">Material Design 3</span>
+    <span class="skill">GitHub</span>
+    <span class="skill">Android Studio</span>
+
+</div>
 </div>
 </section>
 
@@ -351,10 +421,33 @@ Kotlin · Jetpack Compose · Material 3 · Room DB · Firebase · Retrofit · MV
 <section id="references">
 <h2>06 — References</h2>
 
-<div class="card">
-<p>Android Developers Documentation</p>
-<p>Firebase Docs</p>
-<p>Retrofit Library</p>
+<div class="resources-grid">
+
+    <a href="https://developer.android.com" target="_blank" class="resource-card">
+        <span>Android Developer</span>
+        <span>→</span>
+    </a>
+
+    <a href="https://firebase.google.com/docs" target="_blank" class="resource-card">
+        <span>AFirebase Docs</span>
+    <span>→</span>
+    </a>
+
+    <a href="https://developer.android.com/jetpack/compose" target="_blank" class="resource-card">
+        <span>Jetpack Compose</span>
+        <span>→</span>
+    </a>
+
+    <a href="https://github.com" target="_blank" class="resource-card">
+        <span>GitHub Platform</span>
+        <span>→</span>
+    </a>
+
+    <a href="https://chatgpt.com" target="_blank" class="resource-card">
+        <span>ChatGPT Assistance</span>
+        <span>→</span>
+    </a>
+
 </div>
 </section>
 
