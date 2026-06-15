@@ -124,24 +124,27 @@ h2 {
 }
 
 .card {
-    background: #ffffff;
-    border-radius: 15px;
-    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #fff5fa);
+    border-radius: 18px;
+    padding: 22px;
     margin-bottom: 25px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 25px rgba(255, 79, 154, 0.12);
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-}
 
-.card h3 {
-    margin-top: 0;
-    color: #333;
+    border: 1px solid rgba(255, 182, 193, 0.4);
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    transition: 0.3s;
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(255, 79, 154, 0.25);
+}
+    
+.card h3 {
+    margin-top: 0;
+    color: #ff4f9a;
 }
 
 #profile .card {
@@ -428,7 +431,7 @@ iframe:focus {
 <p><b>Session:</b> 2025/2026 Semester 2</p>
 
 <p>
-A software engineering student passionate about building mobile applications that improve learning experience and productivity.
+A software engineering student passionate about building mobile applications that improve learning experience and productivity. I enjoy exploring modern Android development technologies such as Jetpack Compose, Firebase, and Room Database to create clean, efficient, and user-friendly applications. Through my academic journey, I have developed a strong interest in UI/UX design, mobile system architecture, and real-world problem solving using software solutions. I am continuously improving my skills to become a better developer who can contribute to meaningful and impactful digital products.
 </p>
 </div>
 </section>
@@ -448,6 +451,10 @@ A software engineering student passionate about building mobile applications tha
         <h4>LAB 1</h4>
         <h3>User Interface (UI) Development</h3>
         <p>Basic Jetpack Compose UI components.</p>
+        <h4>Reflection</h4>
+<p>
+Through this lab, I learned how to build simple user interfaces using composable functions and understand the structure of modern Android UI development. I practiced using basic layout elements such as Column, Row, and Text, which helped me gain confidence in building clean and responsive interfaces using Jetpack Compose. This lab also improved my understanding of declarative UI design and how UI elements are structured in Android applications.
+</p>
 
         <div class="screenshots">
             <img src="Lab1.png">
@@ -463,6 +470,10 @@ A software engineering student passionate about building mobile applications tha
         <h4>LAB 2</h4>
         <h3>User Interaction & States</h3>
         <p>State management using Compose.</p>
+        <h4>Reflection</h4>
+<p>
+Through this lab, I learned how state management works in Jetpack Compose using mutable state and reactive UI updates. I understood how changes in state automatically update the UI, which is a key concept in declarative programming. This exercise helped me improve my ability to manage user interactions and dynamic content in Android applications more effectively.
+</p>
 
         <div class="screenshots">
             <img src="Lab 2a.png">
@@ -479,6 +490,10 @@ A software engineering student passionate about building mobile applications tha
         <h4>LAB 3</h4>
         <h3>Material Design Components</h3>
         <p>Material 3 theming system.</p>
+        <h4>Reflection</h4>
+<p>
+Through this lab, I learned how to apply Material 3 design principles in Android applications using Jetpack Compose. I explored how theming systems work, including color schemes, typography, and component styling to create a consistent and modern user interface. This lab helped me understand the importance of design systems in building visually appealing and user-friendly mobile applications.
+</p>
 
         <div class="screenshots">
             <img src="Lab 3a.png">
@@ -495,6 +510,10 @@ A software engineering student passionate about building mobile applications tha
         <h4>LAB 4</h4>
         <h3>Navigation Flow Architecture</h3>
         <p>Multi-screen navigation system.</p>
+        <h4>Reflection</h4>
+<p>
+Through this lab, I learned how to implement multi-screen navigation in Android applications using Jetpack Compose Navigation. I gained understanding of how different screens are connected and how data can be passed between them. This exercise improved my ability to design structured navigation flows, making the user experience more organized and seamless when moving between screens.
+</p>
 
         <div class="screenshots">
             <img src="Lab 4a.png">
@@ -511,6 +530,10 @@ A software engineering student passionate about building mobile applications tha
         <h4>LAB 5</h4>
         <h3>Local Architecture & Room DB</h3>
         <p>Local data persistence using Room Database.</p>
+        <h4>Reflection</h4>
+<p>
+Through this lab, I learned how to implement local data storage in Android using Room Database. I understood the concept of persistence, entities, DAO, and database structure, as well as how data is stored and retrieved efficiently in an offline environment. This exercise improved my understanding of local architecture and strengthened my skills in building applications that can function without constant internet connectivity.
+</p>
 
         <div class="screenshots">
             <img src="Lab 5a.png">
@@ -523,54 +546,71 @@ A software engineering student passionate about building mobile applications tha
 </section>
 
 <!-- PROJECTS -->
+<!-- PROJECTS -->
 <section id="projects">
 <h2>Project Submissions</h2>
 
 <div class="card">
-<h3>Project 1 — Navigation App</h3>
-<h3>Problem Statement</h3>
-<p>
-This project is a multi-screen study application that aims to provide a simple and structured navigation system between study materials, notes, and interactive content. It addresses the need for smooth screen transitions in a basic Android app using static data.
-</p>
 
-<h3>Reflection</h3>
-<p>
-Through this project, I learned how to implement basic Android navigation and manage multiple screens. I also improved my understanding of UI layout design and user flow in a mobile application.
-</p>
-<p>
-<a class="github-btn" href="https://github.com/fatinblqis/A210739_Dr.NelsonSena_Project1.git" target="_blank">
-    <svg class="github-icon" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M12 .5C5.7.5.7 5.7.7 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 2 .6 2.5.8.2 1.6.2 2.4.1.1-.7.4-1.3.7-1.8-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2.9-.3 1.8-.4 2.7-.4s1.8.1 2.7.4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.3 5.7 18.3.5 12 .5z"/>
-    </svg>
-    View on GitHub
-</a>
+    <!-- 🎥 VIDEO ATAS -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/9Xb6bmzQFfQ" allowfullscreen></iframe>
+    </div>
 
-<p>
-<a class="video-btn" href="https://youtu.be/9Xb6bmzQFfQ?si=y0JK6qQhXvUSL0eP" target="_blank">
-▶ Watch Video
-</a>
-</p>
+    <h3>Project 1 — Navigation App</h3>
+
+    <h3>Problem Statement</h3>
+    <p>
+    This project is a multi-screen study application that aims to provide a simple and structured navigation system between study materials, notes, and interactive content. It addresses the need for smooth screen transitions in a basic Android app using static data.
+    </p>
+
+    <h3>Reflection</h3>
+    <p>
+    Through this project, I learned how to implement basic Android navigation and manage multiple screens. I also improved my understanding of UI layout design and user flow in a mobile application.
+    </p>
+
+    <div style="margin-top:15px;">
+        <a class="github-btn" href="https://github.com/fatinblqis/A210739_Dr.NelsonSena_Project1.git" target="_blank">
+            <svg class="github-icon" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 .5C5.7.5.7 5.7.7 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 2 .6 2.5.8.2 1.6.2 2.4.1.1-.7.4-1.3.7-1.8-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2.9-.3 1.8-.4 2.7-.4s1.8.1 2.7.4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.3 5.7 18.3.5 12 .5z"/>
+            </svg>
+            View on GitHub
+        </a>
+    </div>
+
 </div>
+
 
 <div class="card">
-<h3>Project 2 — Full Stack App</h3>
-<h3>Problem Statement</h3>
-<p>
-This project is a full-stack Android application that integrates REST API, Firebase, Room database, and device sensors. It aims to solve the challenge of managing real-time data, offline storage, and cloud synchronization in a single seamless application.
-</p>
 
-<h3>Reflection</h3>
-<p>
-Through this project, I gained experience in backend integration, offline-first design using Room, Firebase cloud sync, and working with Android device sensors. It improved my understanding of building a complete mobile application system.
-</p>
-    <a class="github-btn" href="https://github.com/fatinblqis/A210739_Dr.NelsonSena_Project2.git" target="_blank">
-    <svg class="github-icon" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M12 .5C5.7.5.7 5.7.7 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 2 .6 2.5.8.2 1.6.2 2.4.1.1-.7.4-1.3.7-1.8-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2.9-.3 1.8-.4 2.7-.4s1.8.1 2.7.4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.3 5.7 18.3.5 12 .5z"/>
-    </svg>
-    View on GitHub
-</a>
-<p><b>VSR:</b> <a class="btn" href="https://youtu.be/9Xb6bmzQFfQ?si=y0JK6qQhXvUSL0eP" target="_blank">Watch Video</a></p>
+    <!-- 🎥 VIDEO ATAS -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/_0eVYQ9AfYo" allowfullscreen></iframe>
+    </div>
+
+    <h3>Project 2 — Full Stack App</h3>
+
+    <h3>Problem Statement</h3>
+    <p>
+    This project is a full-stack Android application that integrates REST API, Firebase, Room database, and device sensors. It aims to solve the challenge of managing real-time data, offline storage, and cloud synchronization in a single seamless application.
+    </p>
+
+    <h3>Reflection</h3>
+    <p>
+    Through this project, I gained experience in backend integration, offline-first design using Room, Firebase cloud sync, and working with Android device sensors. It improved my understanding of building a complete mobile application system.
+    </p>
+
+    <div style="margin-top:15px;">
+        <a class="github-btn" href="https://github.com/fatinblqis/A210739_Dr.NelsonSena_Project2.git" target="_blank">
+            <svg class="github-icon" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 .5C5.7.5.7 5.7.7 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 2 .6 2.5.8.2 1.6.2 2.4.1.1-.7.4-1.3.7-1.8-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2.9-.3 1.8-.4 2.7-.4s1.8.1 2.7.4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.3 5.7 18.3.5 12 .5z"/>
+            </svg>
+            View on GitHub
+        </a>
+    </div>
+
 </div>
+
 </section>
 
 <!-- REFLECTION -->
