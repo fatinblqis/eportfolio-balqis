@@ -105,6 +105,21 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.journey-card {
+    background: linear-gradient(
+        135deg,
+        #fff5fa,
+        #ffe8f3
+    );
+    
+    border-left: 6px solid #ff6fa9;
+
+    box-shadow:
+        0 8px 25px rgba(255,111,169,0.15);
+
+    border-radius: 20px;
+}
+
 .resources-grid .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 15px 35px rgba(255,182,193,0.3);
@@ -354,21 +369,30 @@ A software engineering student passionate about building mobile applications tha
 
 <div class="card">
 <h3>Project 1 — Navigation App</h3>
-<p>This project is a multi-screen study application prototype designed to demonstrate basic Android navigation concepts. 
-It allows users to move between different screens that represent study materials, notes, and simple interactive content. 
-The app focuses on implementing structured UI navigation flow using static data, ensuring smooth transitions between activities/screens. 
-Through this project, I learned how to manage screen routing, UI layout design, and user interaction in a structured mobile application.</p>
+<h3>Problem Statement</h3>
+<p>
+This project is a multi-screen study application that aims to provide a simple and structured navigation system between study materials, notes, and interactive content. It addresses the need for smooth screen transitions in a basic Android app using static data.
+</p>
+
+<h3>Reflection</h3>
+<p>
+Through this project, I learned how to implement basic Android navigation and manage multiple screens. I also improved my understanding of UI layout design and user flow in a mobile application.
+</p>
 <p><b>GitHub:</b> <a class="btn" href="https://github.com/fatinblqis/A210739_Dr.NelsonSena_Project1.git" target="_blank">View Repo</a></p>
 <p><b>VSR:</b> <a class="btn" href="https://youtu.be/OpyDLPJlZRU?si=Z5iHq-4dkkNlNfze" target="_blank">Watch Video</a></p>
 </div>
 
 <div class="card">
 <h3>Project 2 — Full Stack App</h3>
-<p>This project is a full-stack Android application that integrates multiple modern technologies including REST API, Firebase, Room database, and device sensors. 
-The application demonstrates real-time data handling, local storage management, and cloud synchronization to provide a seamless user experience. 
-It also includes sensor-based features that interact with device hardware to enhance functionality. 
-Through this project, I gained hands-on experience in backend integration, offline-first design using Room, cloud data synchronization with Firebase, and working with hardware sensors in Android development.
-</p></p>
+<h3>Problem Statement</h3>
+<p>
+This project is a full-stack Android application that integrates REST API, Firebase, Room database, and device sensors. It aims to solve the challenge of managing real-time data, offline storage, and cloud synchronization in a single seamless application.
+</p>
+
+<h3>Reflection</h3>
+<p>
+Through this project, I gained experience in backend integration, offline-first design using Room, Firebase cloud sync, and working with Android device sensors. It improved my understanding of building a complete mobile application system.
+</p>p>
 <p><b>GitHub:</b> <a class="btn" href="https://github.com/fatinblqis/A210739_Dr.NelsonSena_Project2.git" target="_blank">View Repo</a></p>
 <p><b>VSR:</b> <a class="btn" href="https://youtu.be/9Xb6bmzQFfQ?si=y0JK6qQhXvUSL0eP" target="_blank">Watch Video</a></p>
 </div>
@@ -399,7 +423,7 @@ This project also aligns with <b>SDG 4: Quality Education</b> by supporting the 
 <section id="journey">
 <h2>04 — Learning Journey</h2>
 
-<div class="card">
+<div class="card journey-card">
 <p>
 My learning journey began with basic Android UI development in Lab 1, where I focused on understanding layouts and simple navigation. 
 As the course progressed, I advanced to building more complex applications that involve multiple components and system integrations.
