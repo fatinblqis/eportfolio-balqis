@@ -95,16 +95,53 @@ h2 {
 }
 
 /* ================= CARD ================= */
-.card {
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 18px;
-    border-left: 6px solid #ff4f9a;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+#labs {
+    padding: 40px;
 }
 
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.video-container {
+    margin: 15px 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.screenshots img {
+    width: 48%;
+    margin: 5px;
+    border-radius: 10px;
+}
 .journey-card {
     background: linear-gradient(
         135deg,
