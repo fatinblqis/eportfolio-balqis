@@ -391,20 +391,68 @@ footer {
 iframe:focus {
     outline: none;
 }
+
+.hero-header {
+    background: linear-gradient(135deg, #ffe6f0, #f8f9ff);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.header-content p {
+    margin: 8px 0 20px;
+    color: #666;
+}
+
+.header-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header-badges span {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+/* SDG special badge */
+.sdg-badge {
+    background: #ff4d6d;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
     
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1> fatinblqis Portfolio</h1>
-    <p>Mobile App Development · UKM · 2026</p>
+<header class="hero-header">
+    <div class="header-content">
+        <h1>fatinblqis Portfolio</h1>
+        <p>Mobile App Development · UKM · 2026</p>
 
-    <div class="header-badges">
-        <span>Android Developer</span>
-        <span>UKM Student</span>
-        <span>Jetpack Compose</span>
+        <div class="header-badges">
+            <span>Android Developer</span>
+            <span>UKM Student</span>
+            <span>Jetpack Compose</span>
+            <span class="sdg-badge">SDG 4: Quality Education</span>
+        </div>
+
+        <p class="sdg-description">
+            BrainBridge App aligns with SDG 4 (Quality Education) because it supports accessible digital learning,
+            improves knowledge sharing, and provides structured educational content through a mobile platform.
+        </p>
     </div>
 </header>
 
@@ -554,7 +602,7 @@ Through this lab, I learned how to implement local data storage in Android using
 
     <!-- 🎥 VIDEO ATAS -->
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/9Xb6bmzQFfQ" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/OpyDLPJlZRU" allowfullscreen></iframe>
     </div>
 
     <h3>Project 1 — Navigation App</h3>
@@ -585,7 +633,7 @@ Through this lab, I learned how to implement local data storage in Android using
 
     <!-- 🎥 VIDEO ATAS -->
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/_0eVYQ9AfYo" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/9Xb6bmzQFfQ" allowfullscreen></iframe>
     </div>
 
     <h3>Project 2 — Full Stack App</h3>
