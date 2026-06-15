@@ -45,22 +45,46 @@ nav a:hover {
 /* ================= HEADER ================= */
 header {
     text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #ff6fa9, #ffb3d9);
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #ff4f9a, #ff9ac6, #ffd1e6);
     color: white;
-    border-radius: 0 0 70px 70px;
+    border-radius: 0 0 80px 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* soft floating circles background */
+header::before,
+header::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    filter: blur(10px);
+}
+
+header::before {
+    top: -50px;
+    left: -50px;
+}
+
+header::after {
+    bottom: -60px;
+    right: -60px;
 }
 
 header h1 {
-    font-size: 42px;
+    font-size: 48px;
     margin-bottom: 10px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    font-weight: 800;
 }
 
 header p {
-    opacity: 0.9;
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    opacity: 0.95;
 }
 
 /* badges */
@@ -118,6 +142,45 @@ h2 {
 .card:hover {
     transform: translateY(-5px);
     transition: 0.3s;
+}
+
+#profile .card {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(255, 79, 154, 0.15);
+    transition: 0.3s ease;
+}
+
+#profile .card:hover {
+    transform: translateY(-5px);
+}
+
+#profile p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+#profile b {
+    color: #ff4f9a;
+}
+
+#profile h2 {
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+}
+
+#profile h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #ff4f9a;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
 }
 
 .video-container {
@@ -375,81 +438,91 @@ A software engineering student passionate about building mobile applications tha
 
 <!-- LABS -->
 <section id="labs">
-<h2>Lab Submissions</h2>
+<h2>Laboratory Layouts & Implementations</h2>
 
-<div class="card">
-    <div class="video-container">
-    <iframe
-        src="https://www.youtube.com/embed/REx_FBTCy9A"
-        title="Lab 1 Video"
-        allowfullscreen>
-    </iframe>
-<h3>Lab 1 — UI Fundamentals</h3>
-<p>Basic Jetpack Compose UI components.</p>
-<div class="screenshots">
-    <img src="Lab1.png">
-</div>
+<div class="labs-grid">
+
+    <!-- LAB 1 -->
+    <div class="card lab-card">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/REx_FBTCy9A" allowfullscreen></iframe>
+        </div>
+
+        <h4>LAB 1</h4>
+        <h3>User Interface (UI) Development</h3>
+        <p>Basic Jetpack Compose UI components.</p>
+
+        <div class="screenshots">
+            <img src="Lab1.png">
+        </div>
     </div>
 
-<div class="card">
-    <div class="video-container">
-    <iframe
-        src="https://www.youtube.com/embed/ckKksF4sewg"
-        title="Lab 2 Video"
-        allowfullscreen>
-    </iframe>
-<h3>Lab 2 — Interaction & State</h3>
-<p>State management using Compose.</p>
-<div class="screenshots">
-    <img src="Lab 2a.png">
-    <img src="Lab 2b.png">
-</div>
+    <!-- LAB 2 -->
+    <div class="card lab-card">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/ckKksF4sewg" allowfullscreen></iframe>
+        </div>
+
+        <h4>LAB 2</h4>
+        <h3>User Interaction & States</h3>
+        <p>State management using Compose.</p>
+
+        <div class="screenshots">
+            <img src="Lab 2a.png">
+            <img src="Lab 2b.png">
+        </div>
+    </div>
+
+    <!-- LAB 3 -->
+    <div class="card lab-card">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/C0TJvzH6FoY" allowfullscreen></iframe>
+        </div>
+
+        <h4>LAB 3</h4>
+        <h3>Material Design Components</h3>
+        <p>Material 3 theming system.</p>
+
+        <div class="screenshots">
+            <img src="Lab 3a.png">
+            <img src="Lab 3b.png">
+        </div>
+    </div>
+
+    <!-- LAB 4 -->
+    <div class="card lab-card">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/tnrAiFJrI5U" allowfullscreen></iframe>
+        </div>
+
+        <h4>LAB 4</h4>
+        <h3>Navigation Flow Architecture</h3>
+        <p>Multi-screen navigation system.</p>
+
+        <div class="screenshots">
+            <img src="Lab 4a.png">
+            <img src="Lab 4b.png">
+        </div>
+    </div>
+
+    <!-- LAB 5 -->
+    <div class="card lab-card">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/_0eVYQ9AfYo" allowfullscreen></iframe>
+        </div>
+
+        <h4>LAB 5</h4>
+        <h3>Local Architecture & Room DB</h3>
+        <p>Local data persistence using Room Database.</p>
+
+        <div class="screenshots">
+            <img src="Lab 5a.png">
+            <img src="Lab 5b.png">
+        </div>
+    </div>
+
 </div>
 
-<div class="card">
-    <div class="video-container">
-    <iframe
-        src="https://www.youtube.com/embed/C0TJvzH6FoY"
-        title="Lab 3 Video"
-        allowfullscreen>
-    </iframe>
-<h3>Lab 3 — Material Design</h3>
-<p>Material 3 theming system.</p>
-<div class="screenshots">
-    <img src="Lab 3a.png">
-    <img src="Lab 3b.png">
-</div>
-</div>
-
-<div class="card">
-    <div class="video-container">
-    <iframe
-        src="https://www.youtube.com/embed/tnrAiFJrI5U"
-        title="Lab 4 Video"
-        allowfullscreen>
-    </iframe>
-<h3>Lab 4 — Navigation</h3>
-<p>Multi-screen navigation system.</p>
-<div class="screenshots">
-    <img src="Lab 4a.png">
-    <img src="Lab 4b.png">
-</div>
-</div>
-
-<div class="card">
-    <div class="video-container">
-    <iframe
-        src="https://www.youtube.com/embed/_0eVYQ9AfYo"
-        title="Lab 5 Video"
-        allowfullscreen>
-    </iframe>
-<h3>Lab 5 — Room Database</h3>
-<p>Local data persistence using Room.</p>
-<div class="screenshots">
-    <img src="Lab 5a.png">
-    <img src="Lab 5b.png">
-</div>
-</div>
 </section>
 
 <!-- PROJECTS -->
